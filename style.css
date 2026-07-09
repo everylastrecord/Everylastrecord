@@ -191,6 +191,19 @@ footer{padding:28px;text-align:center;border-top:1px solid rgba(248,231,189,.12)
   nav{display:none}
   .episode-grid{grid-template-columns:1fr}
   .card.featured{grid-column:auto}
+}
+.hidden-review {
+  display: none;
+}
+
+.hidden-review.show {
+  display: block;
+}
+
+#toggleReviews {
+  margin-top: 24px;
+  cursor: pointer;
+}
   .hero{padding-top:38px}
   .hero-art{order:-1}
   .brand img{height:36px}
