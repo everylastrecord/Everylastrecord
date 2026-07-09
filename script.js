@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("toggleReviews");
   const hiddenReviews = document.querySelectorAll(".hidden-review");
 
+  if (toggleButton) {
   toggleButton.addEventListener("click", function () {
     hiddenReviews.forEach(function (review) {
       review.classList.toggle("show");
