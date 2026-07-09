@@ -82,9 +82,11 @@ nav a:hover,.links a:hover{color:var(--blue)}
 }
 h1,h2,h3,p{margin-top:0}
 h1{
-  font-size: clamp(2.5rem, 13vw, 4.5rem);
-  line-height: .9;
-  max-width: 100%;
+  font-size:clamp(3.4rem,9vw,8.8rem);
+  line-height:.86;
+  letter-spacing:-.07em;
+  max-width:900px;
+  text-transform:uppercase;
 }
 .intro{
   color:#f2e1b9;
