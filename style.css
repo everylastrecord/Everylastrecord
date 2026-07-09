@@ -191,7 +191,11 @@ footer{padding:28px;text-align:center;border-top:1px solid rgba(248,231,189,.12)
   nav{display:none}
   .episode-grid{grid-template-columns:1fr}
   .card.featured{grid-column:auto}
+  .hero{padding-top:38px}
+  .hero-art{order:-1}
+  .brand img{height:36px}
 }
+
 .hidden-review {
   display: none;
 }
@@ -203,8 +207,13 @@ footer{padding:28px;text-align:center;border-top:1px solid rgba(248,231,189,.12)
 #toggleReviews {
   margin-top: 24px;
   cursor: pointer;
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid var(--line);
+  font: inherit;
+  font-weight: 900;
 }
-  .hero{padding-top:38px}
-  .hero-art{order:-1}
-  .brand img{height:36px}
+
+#toggleReviews:hover {
+  color: var(--blue);
 }
