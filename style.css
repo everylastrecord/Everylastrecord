@@ -169,10 +169,33 @@ h2{
   border-top:1px solid rgba(248,231,189,.14);
 }
 .members{
-  display:grid;
-  gap:14px;
-  font-size:1.08rem;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:28px;
 }
+
+.member-card{
+    text-align:center;
+}
+
+.member-card img{
+    width:100%;
+    aspect-ratio:1;
+    object-fit:cover;
+    border-radius:18px;
+    border:1px solid var(--line);
+    margin-bottom:18px;
+}
+
+.member-card h3{
+    margin-bottom:8px;
+}
+
+.member-card p{
+    color:var(--muted);
+  line-height:1.6;
+}
+
 .playlist-banner{
   overflow:hidden;
   border:1px solid var(--line);
