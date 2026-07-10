@@ -424,7 +424,40 @@ footer{
     line-height:.9;
     max-width:100%;
   }
+  .episode-grid{
+    grid-template-columns:1fr;
+  }
 
+  .members{
+    grid-template-columns:1fr;
+  }
+
+  .playlist-banner{
+    grid-template-columns:1fr;
+  }
+
+  /* Newsletter on mobile */
+  .newsletter{
+    max-width:100%;
+    padding:0 20px;
+  }
+
+  .newsletter .formkit-fields{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:16px !important;
+    width:100% !important;
+  }
+
+  .newsletter .formkit-field,
+  .newsletter .formkit-submit{
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  .newsletter .formkit-submit{
+    display:block !important;
+  }
 .hidden-review{
   display:none;
 }
