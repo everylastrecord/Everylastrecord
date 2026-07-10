@@ -79,6 +79,7 @@ nav a:hover,.links a:hover{color:var(--blue)}
   text-transform:uppercase;
   letter-spacing:.18em;
   font-size:.78rem;
+  margin-bottom:10px;
 }
 h1,h2,h3,p{margin-top:0}
 h1{
@@ -171,8 +172,9 @@ h2{
 }
 .members{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:28px;
+    margin-top:40px;
 }
 
 .member-card{
@@ -195,6 +197,26 @@ h2{
 .member-card p{
     color:var(--muted);
   line-height:1.6;
+
+  .member-intro{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.member-intro h2{
+    font-size:clamp(3rem,4vw,4.5rem);
+    line-height:.9;
+    text-transform:uppercase;
+    margin:10px 0 18px;
+}
+
+.member-intro p:last-child{
+    color:var(--muted);
+    line-height:1.6;
 }
 
 .playlist-banner{
