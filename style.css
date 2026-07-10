@@ -129,7 +129,17 @@ h1{
   letter-spacing:-.05em;
   font-weight:950;
 }
-.section{padding:76px clamp(22px,6vw,88px)}
+.section{padding:76px clamp(22px,6vw,88px);
+}
+
+#episodes{
+  border-bottom:1px solid var(--line);
+}
+
+#club{
+  border-bottom:1px solid var(--line);
+}
+
 .section-head{
   display:flex;
   justify-content:space-between;
@@ -197,6 +207,7 @@ h2{
 .member-card p{
     color:var(--muted);
   line-height:1.6;
+}
 
   .member-intro{
     text-align:center;
