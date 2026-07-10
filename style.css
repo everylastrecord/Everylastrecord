@@ -269,33 +269,39 @@ h2{
   padding-top:76px;
 }
 
-.contact{
-  text-align:center;
-  border-top:1px solid rgba(248,231,189,.14);
+.contact .small{
+  margin-bottom:14px;
 }
+
 .newsletter-copy{
   width:100%;
-  max-width:650px;
-  margin:18px auto 10px;
-    text-align:center;
-    color:var(--cream);
-    font-weight:900;
-    text-transform:uppercase;
+  margin:0 auto 12px;
+  text-align:center;
+  color:var(--cream);
+  font-weight:900;
+  text-transform:uppercase;
 }
 
 .newsletter{
-    width:100%;
-  max-width:650px
-    margin:0px auto;
-    text-align:center;
+  display:flex;
+  justify-content:center;
+  width:100%;
+  max-width:650px;
+  margin:0 auto;
+  text-align:center;
 }
 
-.newsletter > p{
-  color:var(--muted);
-  line-height:1.6;
-  margin-bottom:18px;
+.newsletter .formkit-form{
+  width:100% !important;
+  max-width:650px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
 }
 
+.newsletter .formkit-fields{
+  width:100% !important;
+  margin:0 auto !important;
+}
 .links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:24px 0}
 .links a{
   border:1px solid var(--line);
