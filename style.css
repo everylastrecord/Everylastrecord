@@ -273,6 +273,18 @@ h2{
   text-align:center;
   border-top:1px solid rgba(248,231,189,.14);
 }
+.newsletter{
+  width:100%;
+  max-width:650px;
+  margin:28px auto 36px;
+}
+
+.newsletter > p{
+  color:var(--muted);
+  line-height:1.6;
+  margin-bottom:18px;
+}
+
 .links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:24px 0}
 .links a{
   border:1px solid var(--line);
