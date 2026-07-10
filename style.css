@@ -273,10 +273,17 @@ h2{
   text-align:center;
   border-top:1px solid rgba(248,231,189,.14);
 }
+.newsletter-copy{
+    text-align:center;
+    color:var(--cream);
+    font-weight:700;
+    margin:20px 0 16px;
+}
+
 .newsletter{
-  width:100%;
-  max-width:650px;
-  margin:28px auto 36px;
+    max-width:650px;
+    margin:24px auto 0;
+    text-align:center;
 }
 
 .newsletter > p{
