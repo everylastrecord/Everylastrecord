@@ -164,8 +164,9 @@ h2{
 .card p,.members p,.playlist-banner p,.small,footer{color:var(--muted);line-height:1.6}
 .split{
   display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:40px;
+  grid-template-columns:300px 1fr;
+  gap:32px;
+  align-items:start;
   border-top:1px solid rgba(248,231,189,.14);
 }
 .members{
