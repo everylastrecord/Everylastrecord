@@ -275,13 +275,13 @@ h2{
 }
 
 .contact .small{
-  margin-bottom:40px;
+  margin-top:40px;
 }
 
 .newsletter-copy{
   width:100%;
   margin:6px auto 8px;
-  margin-top:10px;
+  margin-top:40px;
   text-align:center;
   color:var(--cream);
   font-weight:900;
