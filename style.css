@@ -268,14 +268,19 @@ h2{
   border-top:1px solid var(--line);
   padding-top:76px;
 }
+.contact{
+  text-align:center;
+  border-top:1px solid rgba(248,231,189,.14);
+  padding-bottom:24px;
+}
 
 .contact .small{
-  margin-bottom:14px;
+  margin-bottom:8px;
 }
 
 .newsletter-copy{
   width:100%;
-  margin:0 auto 12px;
+  margin:6px auto 8px;
   text-align:center;
   color:var(--cream);
   font-weight:900;
@@ -283,24 +288,35 @@ h2{
 }
 
 .newsletter{
-  display:flex;
-  justify-content:center;
   width:100%;
-  max-width:650px;
+  max-width:760px;
   margin:0 auto;
   text-align:center;
 }
 
 .newsletter .formkit-form{
   width:100% !important;
-  max-width:650px !important;
-  margin-left:auto !important;
-  margin-right:auto !important;
+  max-width:760px !important;
+  margin:0 auto !important;
 }
 
 .newsletter .formkit-fields{
   width:100% !important;
+  max-width:760px !important;
   margin:0 auto !important;
+}
+.newsletter .formkit-field{
+  flex:1 1 auto !important;
+  margin:0 !important;
+}
+
+.newsletter .formkit-input{
+  width:100% !important;
+}
+
+.newsletter .formkit-submit{
+  flex:0 0 auto !important;
+  margin:0 !important;
 }
 .links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:24px 0}
 .links a{
@@ -308,7 +324,11 @@ h2{
   border-radius:999px;
   padding:12px 18px;
 }
-footer{padding:28px;text-align:center;border-top:1px solid rgba(248,231,189,.12)}
+footer{
+  padding:20px 28px;
+  text-align:center;
+  border-top:1px solid rgba(248,231,189,.12)
+}
 @media(max-width:900px){
   .site-header{
     position:sticky;
