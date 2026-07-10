@@ -136,10 +136,6 @@ h1{
   border-bottom:1px solid var(--line);
 }
 
-#club{
-  border-bottom:1px solid var(--line);
-}
-
 .section-head{
   display:flex;
   justify-content:space-between;
@@ -246,6 +242,12 @@ h2{
 }
 .playlist-banner div{padding:34px;align-self:end}
 .playlist-banner h3{font-size:clamp(2rem,5vw,5rem);line-height:.9;text-transform:uppercase;letter-spacing:-.06em}
+
+#playlists{
+  border-top:1px solid var(--line);
+  padding-top:76px;
+}
+
 .contact{
   text-align:center;
   border-top:1px solid rgba(248,231,189,.14);
@@ -259,7 +261,12 @@ h2{
 footer{padding:28px;text-align:center;border-top:1px solid rgba(248,231,189,.12)}
 @media(max-width:900px){
   .hero,.split,.playlist-banner{grid-template-columns:1fr}
-  nav{display:none}
+  nav{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+  }
   .episode-grid{grid-template-columns:1fr}
   .card.featured{grid-column:auto}
   .hero{padding-top:38px}
