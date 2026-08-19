@@ -45,3 +45,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+const reviewSearch = document.getElementById("reviewSearch");
+const genreFilter = document.getElementById("genreFilter");
+const reviewCards = document.querySelectorAll(".review-card");
+const noResults = document.getElementById("noResults");
+
+function filterReviews() {
+  if (!reviewSearch || !genreFilter) return;
+
+  const searchTerm = reviewSearch.value.toLowerCase().trim();
+  const selectedGenre = genreFilter.value;
+
+  let visibleCount = 0;
+
+  reviewCards.forEach(function(card) {
+    const artist = card.dataset.artist.toLowerCase();
+    const album = card.dataset.album.toLowerCase();
+    const genre = card.dataset.genre;
+
+    const matchesSearch =
+      artist.includes(searchTerm) ||
+      album.includes(searchTerm);
+
+    const matchesGenre =
+      selectedGenre === "all" ||
+      genre === selectedGenre;
+
+    if (matchesSearch && matchesGenre) {
+      card.style.display = "";
+      visibleCount++;
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  if (noResults) {
+    noResults.style.display =
+      visibleCount === 0 ? "block" : "none";
+  }
+}
+
+if (reviewSearch) {
+  reviewSearch.addEventListener("input", filterReviews);
+}
+
+if (genreFilter) {
+  genreFilter.addEventListener("change", filterReviews);
+}
