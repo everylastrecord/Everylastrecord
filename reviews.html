@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reviews | Every Last Record</title>
+
+  <meta
+    name="description"
+    content="Browse Every Last Record album reviews, scores, and full episodes."
+  />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="elr-logo-1.png" alt="Every Last Record logo" />
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="siteNav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="siteNav">
+      <a href="reviews.html">Reviews</a>
+      <a href="index.html#club">The Club</a>
+      <a href="index.html#playlists">Playlists</a>
+      <a href="index.html#contact">Connect</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="reviews-hero">
+      <p class="eyebrow">Every Last Record</p>
+
+      <h1>Reviews</h1>
+
+      <p class="reviews-intro">
+        Every album we've sat with, discussed, scored, and lived with.
+      </p>
+    </section>
+
+    <section class="reviews-tools">
+
+      <input
+        type="search"
+        id="reviewSearch"
+        placeholder="Search artist or album..."
+        aria-label="Search reviews"
+      />
+
+      <select id="genreFilter" aria-label="Filter by genre">
+        <option value="all">All Genres</option>
+        <option value="hip-hop">Hip-Hop</option>
+        <option value="rnb">R&B</option>
+        <option value="soul">Soul</option>
+        <option value="alternative">Alternative</option>
+        <option value="electronic">Electronic</option>
+        <option value="pop">Pop</option>
+      </select>
+
+    </section>
+
+    <section class="reviews-archive">
+
+      <div class="reviews-grid" id="reviewsGrid">
+
+        <!-- KID CUDI -->
+        <article
+          class="review-card"
+          data-artist="Kid Cudi"
+          data-album="Man on The Moon"
+          data-genre="hip-hop"
+        >
+          <img
+            src="man-on-the-moon.jpg"
+            alt="Kid Cudi Man on The Moon album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">8.4</span>
+
+            <p class="review-artist">Kid Cudi</p>
+
+            <h2>Man on The Moon</h2>
+
+            <p>
+              A raw, experimental project that helped reshape the sound of hip hop
+              and influenced a generation of artists that followed.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- KANYE WEST -->
+        <article
+          class="review-card"
+          data-artist="Kanye West"
+          data-album="The College Dropout"
+          data-genre="hip-hop"
+        >
+          <img
+            src="college-dropout.jpg"
+            alt="Kanye West The College Dropout album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">9.2</span>
+
+            <p class="review-artist">Kanye West</p>
+
+            <h2>The College Dropout</h2>
+
+            <p>
+              From the underdog story to the sound, the skits, and the impact,
+              this one still holds weight.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- FRANK OCEAN -->
+        <article
+          class="review-card"
+          data-artist="Frank Ocean"
+          data-album="Blonde"
+          data-genre="rnb"
+        >
+          <img
+            src="blonde.jpg"
+            alt="Frank Ocean Blonde album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">9.8</span>
+
+            <p class="review-artist">Frank Ocean</p>
+
+            <h2>Blonde</h2>
+
+            <p>
+              A project built on duality, memory, and feeling, still pushing
+              boundaries years later.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- D'ANGELO -->
+        <article
+          class="review-card"
+          data-artist="D'Angelo"
+          data-album="Voodoo"
+          data-genre="soul"
+        >
+          <img
+            src="voodoo.jpg"
+            alt="D'Angelo Voodoo album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">9.8</span>
+
+            <p class="review-artist">D'Angelo</p>
+
+            <h2>Voodoo</h2>
+
+            <p>
+              A masterclass in feel, groove, and musical chemistry.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- NONAME -->
+        <article
+          class="review-card"
+          data-artist="Noname"
+          data-album="Telefone"
+          data-genre="hip-hop"
+        >
+          <img
+            src="telefone.jpg"
+            alt="Noname Telefone album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">8.3</span>
+
+            <p class="review-artist">Noname</p>
+
+            <h2>Telefone</h2>
+
+            <p>
+              Nearly a decade later, the poetry and themes still hit the same.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BLVCK SVM -->
+        <article
+          class="review-card"
+          data-artist="Blvck Svm"
+          data-album="Michelinman"
+          data-genre="hip-hop"
+        >
+          <img
+            src="michelinman.jpg"
+            alt="Blvck Svm Michelinman album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">7.3</span>
+
+            <p class="review-artist">Blvck Svm</p>
+
+            <h2>Michelinman</h2>
+
+            <p>
+              A strong concept with a clear vision of luxury, atmosphere, and
+              intention throughout.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- DIJON -->
+        <article
+          class="review-card"
+          data-artist="Dijon"
+          data-album="Absolutely"
+          data-genre="alternative"
+        >
+          <img
+            src="absolutely.jpg"
+            alt="Dijon Absolutely album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">8.6</span>
+
+            <p class="review-artist">Dijon</p>
+
+            <h2>Absolutely</h2>
+
+            <p>
+              Not polished. Not perfect. Just real. Like you walked into the room
+              while it was being made.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- JUSTIN TIMBERLAKE -->
+        <article
+          class="review-card"
+          data-artist="Justin Timberlake"
+          data-album="Justified"
+          data-genre="pop"
+        >
+          <img
+            src="justified.jpg"
+            alt="Justin Timberlake Justified album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">7.4</span>
+
+            <p class="review-artist">Justin Timberlake</p>
+
+            <h2>Justified</h2>
+
+            <p>
+              Iconic singles, but does the album itself still hold up? Or is
+              nostalgia doing some of the heavy lifting?
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- GORILLAZ -->
+        <article
+          class="review-card"
+          data-artist="Gorillaz"
+          data-album="Demon Days"
+          data-genre="alternative"
+        >
+          <img
+            src="demon-days.jpg"
+            alt="Gorillaz Demon Days album cover"
+          />
+
+          <div class="review-card-content">
+            <span class="review-score">9.2</span>
+
+            <p class="review-artist">Gorillaz</p>
+
+            <h2>Demon Days</h2>
+
+            <p>
+              A genre-blending, culture-shaping album that still feels bold,
+              strange, and alive.
+            </p>
+
+            <div class="review-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="noResults" class="no-results">
+        No reviews found.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© Every Last Record. A music club for the purposeful listener.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
