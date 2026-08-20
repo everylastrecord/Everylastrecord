@@ -1,32 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
- const toggleReviews = document.getElementById("toggleReviews");
-const reviewCards = document.querySelectorAll(".episode-grid .card");
+  const toggleReviews = document.getElementById("toggleReviews");
+  const reviewCards = document.querySelectorAll(".episode-grid .card");
 
-if (toggleReviews && reviewCards.length > 6) {
+  if (toggleReviews && reviewCards.length > 6) {
 
-  reviewCards.forEach(function (card, index) {
-    card.classList.remove("show");
+    reviewCards.forEach(function (card, index) {
+      card.classList.remove("show");
 
-    if (index >= 6) {
-      card.classList.add("hidden-review");
-    } else {
-      card.classList.remove("hidden-review");
-    }
-  });
-
-  toggleReviews.addEventListener("click", function () {
-    const hiddenReviews = document.querySelectorAll(".hidden-review");
-
-    const isExpanded = toggleReviews.textContent === "Show Less";
-
-    hiddenReviews.forEach(function (review) {
-      if (isExpanded) {
-        review.classList.remove("show");
+      if (index >= 6) {
+        card.classList.add("hidden-review");
       } else {
-        review.classList.add("show");
+        card.classList.remove("hidden-review");
       }
     });
 
+    toggleReviews.addEventListener("click", function () {
+      const hiddenReviews = document.querySelectorAll(".hidden-review");
+      const isExpanded = toggleReviews.textContent === "Show Less";
+
+      hiddenReviews.forEach(function (review) {
+        if (isExpanded) {
+          review.classList.remove("show");
+        } else {
+          review.classList.add("show");
+        }
+      });
+
+      toggleReviews.textContent =
+        isExpanded ? "View More Reviews" : "Show Less";
+    });
+
+  } else if (toggleReviews) {
+    toggleReviews.style.display = "none";
+  }
     toggleReviews.textContent =
       isExpanded ? "View More Reviews" : "Show Less";
   });
