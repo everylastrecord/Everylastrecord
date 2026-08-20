@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  // REVIEWS
   const toggleReviews = document.getElementById("toggleReviews");
   const reviewCards = document.querySelectorAll(".episode-grid .card");
 
@@ -33,14 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
   } else if (toggleReviews) {
     toggleReviews.style.display = "none";
   }
-    toggleReviews.textContent =
-      isExpanded ? "View More Reviews" : "Show Less";
-  });
 
-} else if (toggleReviews) {
-  toggleReviews.style.display = "none";
-}
 
+  // MOBILE MENU
   const menuToggle = document.getElementById("menuToggle");
   const siteNav = document.getElementById("siteNav");
   const navLinks = siteNav ? siteNav.querySelectorAll("a") : [];
@@ -70,36 +67,5 @@ document.addEventListener("DOMContentLoaded", function () {
       link.addEventListener("click", closeMenu);
     });
   }
+
 });
-
-  const menuToggle = document.getElementById("menuToggle");
-  const siteNav = document.getElementById("siteNav");
-  const navLinks = siteNav ? siteNav.querySelectorAll("a") : [];
-
-  function closeMenu() {
-    if (!menuToggle || !siteNav) return;
-
-    menuToggle.classList.remove("open");
-    siteNav.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Open navigation menu");
-  }
-
-  if (menuToggle && siteNav) {
-    menuToggle.addEventListener("click", function () {
-      const isOpen = siteNav.classList.toggle("open");
-
-      menuToggle.classList.toggle("open", isOpen);
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-      menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
-      );
-    });
-
-    navLinks.forEach(function (link) {
-      link.addEventListener("click", closeMenu);
-    });
-  }
-});
-
