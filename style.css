@@ -461,11 +461,12 @@ footer{
  
 }  
 
-.hidden-review{
-  display:none;
+.card.hidden-review{
+  display:none !important;
 }
-.hidden-review.show{
-  display:block;
+
+.card.hidden-review.show{
+  display:block !important;
 }
 
 button#toggleReviews.button.secondary{
