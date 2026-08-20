@@ -1,32 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.addEventListener("DOMContentLoaded", function () {
-  const toggleReviews = document.getElementById("toggleReviews");
-  const reviewCards = document.querySelectorAll(".episode-grid .card");
+ const toggleReviews = document.getElementById("toggleReviews");
+const reviewCards = document.querySelectorAll(".episode-grid .card");
 
-  if (toggleReviews && reviewCards.length) {
-    const halfwayPoint = Math.ceil(reviewCards.length / 2);
+if (toggleReviews && reviewCards.length > 6) {
 
-    reviewCards.forEach(function (card, index) {
-      if (index >= halfwayPoint) {
-        card.classList.add("hidden-review");
+  reviewCards.forEach(function (card, index) {
+    card.classList.remove("show");
+
+    if (index >= 6) {
+      card.classList.add("hidden-review");
+    } else {
+      card.classList.remove("hidden-review");
+    }
+  });
+
+  toggleReviews.addEventListener("click", function () {
+    const hiddenReviews = document.querySelectorAll(".hidden-review");
+
+    const isExpanded = toggleReviews.textContent === "Show Less";
+
+    hiddenReviews.forEach(function (review) {
+      if (isExpanded) {
+        review.classList.remove("show");
       } else {
-        card.classList.remove("hidden-review");
+        review.classList.add("show");
       }
     });
 
-    toggleReviews.addEventListener("click", function () {
-      const hiddenHalf = document.querySelectorAll(".hidden-review");
+    toggleReviews.textContent =
+      isExpanded ? "View More Reviews" : "Show Less";
+  });
 
-      hiddenHalf.forEach(function (review) {
-        review.classList.toggle("show");
-      });
-
-      toggleReviews.textContent =
-        toggleReviews.textContent === "Show Less"
-          ? "View More Reviews"
-          : "Show Less";
-    });
-  }
+} else if (toggleReviews) {
+  toggleReviews.style.display = "none";
+}
 
   const menuToggle = document.getElementById("menuToggle");
   const siteNav = document.getElementById("siteNav");
