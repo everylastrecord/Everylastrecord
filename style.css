@@ -458,14 +458,16 @@ footer{
   .newsletter .formkit-submit{
     display:block !important;
   }
-</> CSS
-  
+ 
+}  
+
 .hidden-review{
   display:none;
 }
 .hidden-review.show{
   display:block;
 }
+
 button#toggleReviews.button.secondary{
   margin-top:24px;
   cursor:pointer;
@@ -477,6 +479,7 @@ button#toggleReviews.button.secondary{
   appearance:none;
   -webkit-appearance:none;
 }
+
 button#toggleReviews.button.secondary:hover{
   color:var(--blue);
 }
