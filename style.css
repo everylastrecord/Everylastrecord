@@ -165,7 +165,7 @@ h1{
 .reviews-hero{
   padding-top:60px;
   padding-left:28px;
-  padding-right:28px
+  padding-right:28px;
   text-align:center;
 }
 
@@ -356,8 +356,7 @@ footer{
     align-items:center;
     justify-content:space-between;
     padding:14px 18px;
-  }
-
+  
   .brand img{
     height:36px;
   }
@@ -646,7 +645,7 @@ button#toggleReviews.button.secondary:hover{
 .reviews-hero{
   padding-top:45px;
   padding-left:20px;
-  padding-right:20px
+  padding-right:20px;
   text-align:center;
 }
 
