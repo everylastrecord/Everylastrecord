@@ -625,7 +625,12 @@ button#toggleReviews.button.secondary:hover{
   margin-bottom:12px;
 }
 
+.reviews-hero{
+  paddington-top:32px;  
+}
+
 .reviews-hero p{
+  margin-left:12px;
   margin-bottom:0;
 }
 
