@@ -614,3 +614,65 @@ button#toggleReviews.button.secondary:hover{
   }
 }
 
+.reviews-tools{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin:28px 0 38px;
+}
+
+.review-search{
+  width:100%;
+  max-width:520px;
+  padding:14px 18px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.03);
+  color:var(--cream);
+  font:inherit;
+  outline:none;
+}
+
+.review-search::placeholder{
+  color:var(--muted);
+}
+
+.review-search:focus{
+  border-color:var(--blue);
+}
+
+.genre-filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.genre-filter{
+  padding:10px 16px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:transparent;
+  color:var(--cream);
+  font:inherit;
+  font-weight:800;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.genre-filter:hover{
+  color:var(--blue);
+  border-color:var(--blue);
+}
+
+.genre-filter.active{
+  background:var(--blue);
+  border-color:var(--blue);
+  color:#fff;
+}
+
+.no-results{
+  display:none;
+  margin:30px 0;
+  color:var(--muted);
+  font-size:1.1rem;
+}
