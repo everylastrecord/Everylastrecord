@@ -485,6 +485,24 @@ button#toggleReviews.button.secondary:hover{
   color:var(--blue);
 }
 
+.reviews-hero h1{
+  margin-bottom:12px;
+  text-align:left;
+}
+
+.reviews-hero{
+  padding-top:60px;
+  padding-left:28px;
+  padding-right:28px
+  text-align:left;
+}
+
+.reviews-hero p{
+  margin-left:4px:
+  margin-bottom:0;
+  text-align:left;
+}
+
 .reviews-grid{
   display:flex;
   flex-direction:column;
@@ -622,17 +640,19 @@ button#toggleReviews.button.secondary:hover{
 }
 
 .reviews-hero h1{
-  margin-bottom:12px;
+  text-align:center;
 }
 
 .reviews-hero{
-  paddington-top:32px;
+  padding-top:45px;
+  padding-left:20px;
+  padding-right:20px
   text-align:center;
 }
 
 .reviews-hero p{
-  margin-left:0;
   margin-bottom:0;
+  text-align:center;
 }
 
 .review-search{
