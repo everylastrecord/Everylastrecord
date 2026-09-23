@@ -487,20 +487,20 @@ button#toggleReviews.button.secondary:hover{
 
 .reviews-hero h1{
   margin-bottom:12px;
-  text-align:left;
+  text-align:center;
 }
 
 .reviews-hero{
   padding-top:60px;
   padding-left:28px;
   padding-right:28px
-  text-align:left;
+  text-align:center;
 }
 
 .reviews-hero p{
-  margin-left:4px:
+  margin-left:0;
   margin-bottom:0;
-  text-align:left;
+  text-align:center;
 }
 
 .reviews-grid{
