@@ -607,6 +607,23 @@ button#toggleReviews.button.secondary:hover{
   transform:translateY(-2px);
 }
 
+  .reviews-hero h1{
+  text-align:center;
+}
+
+.reviews-hero{
+  padding-top:45px;
+  padding-left:20px;
+  padding-right:20px;
+  text-align:center;
+}
+
+.reviews-hero p{
+  margin-bottom:0;
+  text-align:center;
+}
+}
+
 @media(max-width:700px){
 
   .review-card{
