@@ -484,3 +484,133 @@ button#toggleReviews.button.secondary{
 button#toggleReviews.button.secondary:hover{
   color:var(--blue);
 }
+
+.reviews-grid{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+  margin-top:40px;
+}
+
+.review-card{
+  display:grid;
+  grid-template-columns:240px 1fr;
+  gap:32px;
+  padding:24px;
+  border:1px solid rgba(13,109,253,.45);
+  border-radius:24px;
+  background:linear-gradient(
+    145deg,
+    rgba(255,255,255,.06),
+    rgba(255,255,255,.015)
+  );
+  align-items:center;
+}
+
+.review-art{
+  width:100%;
+}
+
+.review-art img{
+  display:block;
+  width:100%;
+  aspect-ratio:1;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+.review-content{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.review-title{
+  margin:0 0 12px;
+  font-size:clamp(2rem,4vw,4.5rem);
+  line-height:.9;
+  letter-spacing:-.05em;
+  text-transform:uppercase;
+}
+
+.review-meta{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:22px;
+}
+
+.review-artist{
+  font-size:1.15rem;
+  font-weight:800;
+  color:var(--cream);
+}
+
+.review-score{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:52px;
+  padding:8px 12px;
+  border-radius:999px;
+  background:var(--red);
+  color:#070707;
+  font-weight:950;
+}
+
+.review-description{
+  max-width:760px;
+  margin-bottom:24px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.review-platforms{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.platform-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:11px 18px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--cream);
+  text-decoration:none;
+  font-weight:850;
+  transition:.2s ease;
+}
+
+.platform-button:hover{
+  color:var(--blue);
+  border-color:var(--blue);
+  transform:translateY(-2px);
+}
+
+@media(max-width:700px){
+
+  .review-card{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .review-art{
+    max-width:360px;
+  }
+
+  .review-title{
+    font-size:clamp(2rem,10vw,3.5rem);
+  }
+
+  .review-platforms{
+    width:100%;
+  }
+
+  .platform-button{
+    flex:1;
+  }
+}
+
