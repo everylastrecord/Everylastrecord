@@ -51,7 +51,7 @@
       <p class="eyebrow">Every Last Record</p>
 
       <h1>Reviews</h1>
-
+      
       <p class="reviews-intro">
         Every album we've sat with, discussed, scored, and lived with.
       </p>
@@ -59,24 +59,29 @@
 
     <section class="reviews-tools">
 
-      <input
-        type="search"
-        id="reviewSearch"
-        placeholder="Search artist or album..."
-        aria-label="Search reviews"
-      />
+      <div class="reviews-tools">
 
-      <select id="genreFilter" aria-label="Filter by genre">
-        <option value="all">All Genres</option>
-        <option value="hip-hop">Hip-Hop</option>
-        <option value="rnb">R&B</option>
-        <option value="soul">Soul</option>
-        <option value="alternative">Alternative</option>
-        <option value="electronic">Electronic</option>
-        <option value="pop">Pop</option>
-      </select>
+  <input
+    type="search"
+    id="reviewSearch"
+    class="review-search"
+    placeholder="Search artist or album..."
+    aria-label="Search reviews"
+  >
 
-    </section>
+  <div class="genre-filters" id="genreFilters">
+    <button class="genre-filter active" data-genre="all">All</button>
+    <button class="genre-filter" data-genre="hip-hop">Hip-Hop</button>
+    <button class="genre-filter" data-genre="r&b">R&B</button>
+    <button class="genre-filter" data-genre="pop">Pop</button>
+    <button class="genre-filter" data-genre="rock">Rock</button>
+    <button class="genre-filter" data-genre="electronic">Electronic</button>
+    <button class="genre-filter" data-genre="alternative">Alternative</button>
+  </div>
+
+</div>
+
+<p id="noResults" class="no-results">No reviews found.</p>
 
     <section class="reviews-archive">
 
