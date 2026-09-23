@@ -626,11 +626,12 @@ button#toggleReviews.button.secondary:hover{
 }
 
 .reviews-hero{
-  paddington-top:32px;  
+  paddington-top:32px;
+  text-align:center;
 }
 
 .reviews-hero p{
-  margin-left:12px;
+  margin-left:0;
   margin-bottom:0;
 }
 
