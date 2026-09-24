@@ -158,7 +158,9 @@ h1{
 }
 
 .reviews-hero h1{
-  margin-bottom:12px;
+  max-width:none;
+  width:100%;
+  margin:0 0 12px;
   text-align:center;
 }
 
@@ -170,8 +172,8 @@ h1{
 }
 
 .reviews-hero p{
-  margin-left:0;
-  margin-bottom:0;
+  width:100%;
+  margin:0;
   text-align:center;
 }
 
