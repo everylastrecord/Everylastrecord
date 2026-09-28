@@ -192,6 +192,11 @@ h1{
   border-bottom:1px solid var(--line);
 }
 
+.reviews-page{
+  padding-left:clamp(24px,4vw,70px);
+  padding-right:clamp(24px,4vw,70px);
+}
+
 .reviews-hero h1{
   max-width:none;
   width:100%;
