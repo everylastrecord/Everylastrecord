@@ -138,11 +138,32 @@ h1{
   animation:float 5s ease-in-out infinite;
 }
 @keyframes float{50%{transform:translateY(-14px)}}
+.statement{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:100px clamp(40px,8vw,140px);
+  text-align:center;
+}
+
+.statement p{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.statement-lead{
+  display:block;
+  font-size:clamp(4.5rem,8vw,8.5rem);
+  line-height:.9;
+  letter-spacing:-.06em;
+  font-weight:950;
+  color:var(--cream);
+}
+
 .statement-body{
   display:block;
-  margin-top:34px;
-  font-size:clamp(1.5rem,2.5vw,2.8rem);
-  line-height:1.15;
+  margin-top:40px;
+  font-size:clamp(1.6rem,2.7vw,3rem);
+  line-height:1.2;
   letter-spacing:-.02em;
   font-weight:400;
   color:var(--cream);
