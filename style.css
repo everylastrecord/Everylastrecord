@@ -266,6 +266,50 @@ h2{
     color:var(--muted);
     line-height:1.6;
 }
+.club-page{
+  padding-top:70px;
+}
+
+.club-page-intro{
+  text-align:center;
+  max-width:900px;
+  margin:0 auto 50px;
+}
+
+.club-page-intro h1{
+  max-width:none;
+  width:100%;
+  margin:0 0 18px;
+  text-align:center;
+}
+
+.club-page-intro p{
+  max-width:700px;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:1.15rem;
+  line-height:1.6;
+}
+
+.instagram-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:16px;
+  padding:11px 18px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--cream);
+  text-decoration:none;
+  font-weight:850;
+  transition:.2s ease;
+}
+
+.instagram-button:hover{
+  color:var(--blue);
+  border-color:var(--blue);
+  transform:translateY(-2px);
+}
 
 .playlist-banner{
   overflow:hidden;
