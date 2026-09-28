@@ -197,6 +197,14 @@ h1{
   padding-right:clamp(24px,4vw,70px);
 }
 
+.reviews-content{
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+  padding-left:40px;
+  padding-right:40px;
+}
+
 .reviews-hero h1{
   max-width:none;
   width:100%;
