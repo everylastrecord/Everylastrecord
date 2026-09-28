@@ -297,17 +297,19 @@ h2{
   justify-content:center;
   margin-top:16px;
   padding:11px 18px;
-  border:1px solid var(--line);
+  border:1px solid var(--red);
   border-radius:999px;
-  color:var(--cream);
+  background:var(--red);
+  color:#070707;
   text-decoration:none;
   font-weight:850;
   transition:.2s ease;
 }
 
 .instagram-button:hover{
-  color:var(--blue);
-  border-color:var(--blue);
+  background:transparent;
+  color:var(--red);
+  border-color:var(--red);
   transform:translateY(-2px);
 }
 
