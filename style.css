@@ -189,13 +189,15 @@ h1{
 }
 
 .statement{
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  padding:50px clamp(40px,8vw,140px);
-  text-align:center;
-
   position:relative;
   overflow:hidden;
+  isolation:isolate;
+
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+
+  padding:50px clamp(40px,8vw,140px);
+  text-align:center;
 }
 
 .statement::before{
@@ -203,13 +205,13 @@ h1{
   position:absolute;
   inset:0;
 
-  background-image:url("MG_9454.jpg");
+  background-image:url("IMG_9454.jpg");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
 
-  opacity:0.5;
-  z-index:0;
+  opacity:.5;
+  z-index:-1;
   pointer-events:none;
 }
 
