@@ -197,7 +197,7 @@ h1{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("IMG_9454.jpeg") center center / cover no-repeat;
+  background: url("IMG_9454.jpg") center center / cover no-repeat;
   opacity: 0.5;
   z-index: 0;
   pointer-events: none;
