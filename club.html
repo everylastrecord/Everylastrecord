@@ -189,7 +189,21 @@
   <footer>
     © Every Last Record. A music club for the purposeful listener.
   </footer>
+  
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const siteNav = document.getElementById("siteNav");
 
-  <script src="script.js?v=2"></script>
+  if (menuToggle && siteNav) {
+    menuToggle.addEventListener("click", () => {
+      menuToggle.classList.toggle("open");
+      siteNav.classList.toggle("open");
+
+      const isOpen = siteNav.classList.contains("open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+  }
+</script>
+  
 </body>
 </html>
