@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Club | Every Last Record</title>
+
+  <meta
+    name="description"
+    content="Seven voices. One record at a time."
+  >
+
+  <link rel="canonical" href="https://everylastrecord.com/club.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="elr-logo-1.png" alt="Every Last Record">
+    </a>
+
+<button
+  class="menu-toggle"
+  id="menuToggle"
+  aria-label="Open menu"
+  aria-expanded="false"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    
+    <nav id="siteNav">
+      <a href="reviews.html">Reviews</a>
+      <a href="club.html">The Club</a>
+      <a href="index.html#contact">Connect</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section club-page">
+
+  <div class="club-page-intro">
+    <h1>Meet the Club</h1>
+
+    <p>
+      Seven voices. One record at a time.
+    </p>
+  </div>
+
+  <div class="members">
+
+    <div class="member-card">
+      <img src="Paris.JPG" alt="Paris">
+      <h3>Paris</h3>
+      <p>Paris brings a thoughtful perspective and a deep appreciation for the stories music tells.</p>
+
+      <a
+        href="https://www.instagram.com/paris.haven/?utm_source=ig_web_button_share_sheet"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+
+    <div class="member-card">
+      <img src="Adam.JPG" alt="Flo">
+      <h3>Flo</h3>
+      <p>Flo brings curiosity, thoughtful insight, and a unique perspective to every conversation.</p>
+
+      <a
+        href="https://www.instagram.com/9arde2/?utm_source=ig_web_button_share_sheet"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+
+    <div class="member-card">
+      <img src="Matt.jpg" alt="Zeus">
+      <h3>Zeus</h3>
+      <p>Zeus brings creativity, enthusiasm, and an appreciation for music that pushes boundaries.</p>
+
+      <a
+        href="https://www.instagram.com/zeus.envisions"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+
+    <div class="member-card">
+      <img src="Harley.JPG" alt="Harley">
+      <h3>Harley</h3>
+      <p>Harley brings thoughtful analysis, curiosity, and a perspective that always adds something new to the conversation.</p>
+
+      <a
+        href="https://www.instagram.com/hardyharrharr"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+
+    <div class="member-card">
+      <img src="marcus.jpg" alt="Marcus">
+      <h3>Marcus</h3>
+      <p>Marcus brings an analytical ear, a deep appreciation for musical detail, and a unique ability to connect sound across genres and generations.</p>
+
+      <a
+        href="https://www.instagram.com/marcus_hadadream"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+
+    <div class="member-card">
+      <img src="Joely.JPG" alt="Joely">
+      <h3>Joely</h3>
+      <p>Joely brings a bold personality, authenticity, and a genuine joy for music that shines through in every conversation.</p>
+
+      <a
+        href="https://www.instagram.com/joelythinker"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+     <div class="member-card">
+      <img src="Gen.jpeg" alt="Gen">
+      <h3>Gen</h3>
+      <p>Gen brings an excitement for music of all kinds, a sharp ear for lyrical meaning, 
+        and a thoughtful understanding of the themes and identity behind an artist’s work.</p>
+
+      <a
+        href="https://www.instagram.com/gensoulart"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+    <div class="member-card">
+      <img src="Noel.jpg" alt="Noel">
+      <h3>Noel</h3>
+      <p>Noel works behind the scenes to support the conversations, shape each episode, and help bring the club's vision to life.</p>
+
+      <a
+        href="https://www.instagram.com/gotellnoel"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Instagram
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
+  <footer>
+    © Every Last Record. A music club for the purposeful listener.
+  </footer>
+  
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const siteNav = document.getElementById("siteNav");
+
+  if (menuToggle && siteNav) {
+    menuToggle.addEventListener("click", () => {
+      menuToggle.classList.toggle("open");
+      siteNav.classList.toggle("open");
+
+      const isOpen = siteNav.classList.contains("open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+  }
+</script>
+  
+</body>
+</html>
